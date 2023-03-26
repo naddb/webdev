@@ -1,0 +1,11 @@
+django>=4.1.0
+
+# In order to give somebody this project we need to let them know what they need to install
+# to run our app
+# Semantic versioning: 
+# 1.8.2
+# Major Version.Minor Version.Patch Version
+# Major Version - Incremented whenever major changes are made like architectual changes
+# Minor Version - Implemented whenever minor changes are made which does not nreak the API,
+# like a new feature
+# Patch Version - Incremented with bug fixes
