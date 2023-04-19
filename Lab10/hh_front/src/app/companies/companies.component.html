@@ -1,0 +1,31 @@
+<fieldset>
+  <label>Company name</label>
+  <input type="text" [(ngModel)]="newCompany.name"> <br>
+  <label>Description</label>
+  <input type="text" [(ngModel)]="newCompany.description"> <br>
+  <label>City</label>
+  <input type="text" [(ngModel)]="newCompany.city"> <br>
+  <label>Address</label>
+  <input type="text" [(ngModel)]="newCompany.address"> <br>
+  <button (click)="addCompany()">Add company</button>
+</fieldset>
+
+
+<!--<fieldset>-->
+<!--  <label>Vacancy name</label>-->
+<!--  <input type="text" [(ngModel)]="newCompany.name"> <br>-->
+<!--  <label>Description</label>-->
+<!--  <input type="text" [(ngModel)]="newCompany.description"> <br>-->
+<!--  <label>Salary</label>-->
+<!--  <input type="text" [(ngModel)]="newCompany.city"> <br>-->
+<!--  <label>Company</label>-->
+<!--  <input type="text" [(ngModel)]="newCompany.address"> <br>-->
+<!--  <button (click)="addCompany()">Add category</button>-->
+<!--</fieldset>-->
+
+<ul>
+  <li *ngFor="let company of companies">
+    <a routerLink="/companies/{{company.id}}/vacancies">    {{company.id}} - {{company.name}} ({{company.description}}, {{company.city}}, {{company.address}})</a>
+    <!--    <button (click)="deleteCategory(category.id)">X</button>-->
+  </li>
+</ul>
